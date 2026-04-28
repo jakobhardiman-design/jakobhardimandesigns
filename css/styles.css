@@ -484,7 +484,7 @@ a {
   .feed-footer { height: 40px; }
 
   .contact-row a,
-  .contact-row span { word-break: break-all; }
+  .contact-row span { word-break: normal; overflow-wrap: break-word; font-size: 13px; }
 
   .desk-break { display: block; }
   .section-heading { font-size: 19px; margin-bottom: 18px; }
