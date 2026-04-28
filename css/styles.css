@@ -483,8 +483,9 @@ a {
 
   .feed-footer { height: 40px; }
 
+  /* Email no longer needs to break-all on wider screens */
   .contact-row a,
-  .contact-row span { word-break: break-all; }
+  .contact-row span { word-break: normal; }
 
   .desk-break { display: block; }
   .section-heading { font-size: 19px; margin-bottom: 18px; }
