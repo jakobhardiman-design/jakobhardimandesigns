@@ -187,6 +187,36 @@ a {
   opacity: 0.93;
 }
 
+/* Invoice and stationery compositions share one inset and retain all artwork. */
+.stationery-slide {
+  position: relative;
+  overflow: hidden;
+  container-type: size;
+  display: grid;
+  place-items: center;
+  background: var(--art-background);
+  opacity: 0.93;
+}
+
+.stationery-art {
+  position: relative;
+  overflow: hidden;
+  height: min(84cqh, calc(84cqw / 1.24));
+  width: calc(min(84cqh, calc(84cqw / 1.24)) * var(--art-fit));
+  aspect-ratio: var(--art-ratio);
+}
+
+.stationery-art img {
+  position: absolute;
+  width: var(--art-width);
+  height: var(--art-height);
+  max-width: none;
+  left: var(--art-left);
+  top: var(--art-top);
+  object-fit: fill;
+  opacity: 1;
+}
+
 /* ── Arrow buttons ── */
 .arrow-btn {
   flex-shrink: 0;
